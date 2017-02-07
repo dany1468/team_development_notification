@@ -9,6 +9,7 @@ GEM
     chrono (0.3.0)
       activesupport
     concurrent-ruby (1.0.4)
+    dotenv (2.2.0)
     eventmachine (1.2.2)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
@@ -49,6 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   slappy
 
 BUNDLED WITH
