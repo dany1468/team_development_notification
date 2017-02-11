@@ -28,6 +28,7 @@
 #
 #
 # # use regexp literal
-# hear /^foobar/ do
-#   say 'slappppy!'
-# end
+hear /^foobar/ do |event|
+  say 'hello slack!', channel: event.channel
+end
+

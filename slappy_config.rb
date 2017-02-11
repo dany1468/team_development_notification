@@ -1,26 +1,29 @@
+require 'dotenv'
+Dotenv.load
+
 Slappy.configure do |config|
   ## Slappy Settings
   #
   # token:
   #   Slack API Token
   #
-  # config.token = ENV['SLACK_TOKEN']
+  config.token = ENV['SLACK_TOKEN']
 
   # scripts_path_dir:
   #   Slappy scripts directory.
   #   Slappy load scripts in this directory.
   #
-  # config.scripts_dir_path = 'slappy-scripts'
+  config.scripts_dir_path = 'slappy-scripts'
 
   # logger:
   #   Use logger object.
   #
-  # config.logger = Logger.new(STDOUT)
+  config.logger = Logger.new(STDOUT)
 
   # logger.level:
   #   Specify logger level.
   #
-  # config.logger.level = Logger::INFO
+  config.logger.level = Logger::DEBUG
 
   # dsl:
   #   use dsl
