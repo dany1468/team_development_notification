@@ -1,3 +1,18 @@
+GIT
+  remote: git://github.com/dany1468/tracker_api.git
+  revision: d4421db4fa672fdace6047429b3e3f05de3042e0
+  branch: remove_faraday_version_lock
+  specs:
+    tracker_api (1.6.0)
+      addressable
+      equalizer
+      excon
+      faraday
+      faraday_middleware
+      multi_json
+      representable
+      virtus
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -17,11 +32,14 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.0.4)
+    declarative (0.0.9)
+    declarative-option (0.1.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     dotenv (2.2.0)
     equalizer (0.0.11)
     eventmachine (1.2.2)
+    excon (0.55.0)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.10.1)
@@ -39,6 +57,10 @@ GEM
     octokit (4.6.2)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (2.0.5)
+    representable (3.0.3)
+      declarative (< 0.1.0)
+      declarative-option (< 0.2.0)
+      uber (< 0.2.0)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
@@ -58,13 +80,9 @@ GEM
       highline (>= 1.5.0)
     thor (0.19.4)
     thread_safe (0.3.5)
-    tracker_api (0.1.0)
-      addressable
-      faraday
-      faraday_middleware
-      virtus
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uber (0.1.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -81,7 +99,7 @@ DEPENDENCIES
   dotenv
   octokit
   slappy
-  tracker_api
+  tracker_api!
 
 BUNDLED WITH
    1.13.7
